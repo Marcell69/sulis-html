@@ -13,7 +13,8 @@
 	  	{
 			let anyag=document.getElmentsById("oldotAnyag") .value;
 			let anyag=document.getElmentsById("oldoSzer") .value;
-			documents.getElmentsById("megoldas") .innerHTML=( anyag/ (anyag+szer))*100;
+			let eredmeny=( anyag / (anyag+szer) )*100;
+			documents.getElmentsById("megoldas") .innerHTML=eredmeny;
 		}
   </script>
 	<div id="tartalom">
@@ -27,10 +28,10 @@
 		<p>Az oldatokat telítettség szempontjából több csoportba sorolhatjuk:</p>
 		<img src="oldat.jpg" alt="kristálygóc-képződés">
 		<ul>
-			<li>span class="oldat">híg oldat</span>: ha az oldott anyag részarányát minden határon túl csökkentjük, akkor a híg oldat fogalmához jutunk. A híg oldatok törvényszerűségei nem az oldott anyagtól, hanem az oldószertől függenek.</li>
-			<li>span class="oldat">telítetlen oldat</span>: ha az oldott komponens koncentrációja kisebb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága (az oldandó anyagból még több is oldódhat).</li>
-			<li>span class="oldat">telített oldat</span>: ha az oldott komponens koncentrációja megegyezik az adott körülményekhez	(oldószer, hőmérséklet, nyomás) tartozó oldhatóságával (a feleslegben hozzáadott anyag oldatlanul visszamarad).</li>
-			<li>span class="oldat">túltelített az oldat</span>, ha az oldott komponens koncentrációja nagyobb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága. Ilyen rendszer akkor jön létre, ha adott hőmérsékleten egy telített oldat elkezd hűlni és benne a kristálygóc-képződés különféle gátlások miatt nem indul meg.</li>
+			<li><span class="oldat">híg oldat</span>: ha az oldott anyag részarányát minden határon túl csökkentjük, akkor a híg oldat fogalmához jutunk. A híg oldatok törvényszerűségei nem az oldott anyagtól, hanem az oldószertől függenek.</li>
+			<li><span class="oldat">telítetlen oldat</span>: ha az oldott komponens koncentrációja kisebb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága (az oldandó anyagból még több is oldódhat).</li>
+			<li><span class="oldat">telített oldat</span>: ha az oldott komponens koncentrációja megegyezik az adott körülményekhez	(oldószer, hőmérséklet, nyomás) tartozó oldhatóságával (a feleslegben hozzáadott anyag oldatlanul visszamarad).</li>
+			<li><span class="oldat">túltelített az oldat</span>, ha az oldott komponens koncentrációja nagyobb, mint az adott körülményekhez (oldószer, hőmérséklet, nyomás) tartozó oldhatósága. Ilyen rendszer akkor jön létre, ha adott hőmérsékleten egy telített oldat elkezd hűlni és benne a kristálygóc-képződés különféle gátlások miatt nem indul meg.</li>
 		</ul>
 
 		<h2>Az oldat töménysége</h2>
